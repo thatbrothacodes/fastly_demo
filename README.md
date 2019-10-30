@@ -8,3 +8,16 @@
 4. Run docker-compose-up.
 5. Go to http://localhost:3000 in a web browser.
 
+#### Tools/Frameworks
+
+* ExpressJS
+* ReactJS
+* Typescript
+* Material-UI
+* Redux
+* React-Router
+* Thunk
+* Axios
+* Babel
+* Docker
+* Nginx
