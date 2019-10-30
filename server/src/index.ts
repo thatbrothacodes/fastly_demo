@@ -4,7 +4,8 @@ import controllers from './controllers';
 
 const app = express();
 const router = express.Router();
-const port = process.env.PORT || 4000;
+const port: number = parseInt(process.env.PORT) || 4000;
+const environment: string = process.env.NODE_ENV || "development";
 
 // include error handling
 app.use(bodyParser.json());
@@ -20,5 +21,6 @@ app.use((req, res, next) => {
 app.use('/', controllers(router));
 
 app.listen(port, () => {
+    console.log("environment: " + environment);
     console.log(`App listening on port ${port}`);
 });

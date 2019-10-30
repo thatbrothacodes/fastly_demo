@@ -4,6 +4,8 @@ services:
   DEMO-FASTLY-SERVER:
     build: ./server
     container_name: demo-fastly-server
+    environment:
+      - NODE_ENV=production
     image: demo-fastly-server:0.1.0
     ports:
       - "4000:4000"
