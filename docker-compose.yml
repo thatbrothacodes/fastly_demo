@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  DEMO-FASTLY-SERVER:
+    build: ./server
+    container_name: demo-fastly-server
+    image: demo-fastly-server:0.1.0
+    ports:
+      - "4000:4000"
+  DEMO-FASTLY-CLIENT:
+    build: ./client
+    container_name: demo-fastly-client
+    image: demo-fastly-client:0.1.0
+    ports:
+      - "3000:3000"

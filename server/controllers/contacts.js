@@ -6,7 +6,6 @@ export default () => {
     const pageSize = 25;
 
     router.get('/', async(req, res, next) => {
-        console.log('Hi root');
         const page = (req.query.page - 1) || 0;
         const offset = page * pageSize;
         
@@ -31,8 +30,6 @@ export default () => {
     });
 
     router.get('/search', async(req, res, next) => {
-
-        console.log('Hi search');
         const page = (req.query.page - 1) || 0;
         const offset = page * pageSize;
         const nameQuery = req.query.name;
@@ -55,7 +52,6 @@ export default () => {
     });
 
     router.get('/:id', async(req, res, next) => {
-        console.log('Hi id');
         try {
             const data = assignmentData.data.find(i => i.id === parseInt(req.params.id));
             res.status(200).json(data);
