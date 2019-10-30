@@ -15,14 +15,14 @@ function ContactView (props: IComponentProps) {
         if(contactId) {
             props.getContact(parseInt(contactId));
         }
-    },[props.location]);
+    },[]);
 
     return (
         props.contact && 
             <div>
                 <h1>{props.contact.name}</h1>
                 <div key="1">
-                    <img src={props.contact.image} height="238" />
+                    <img src={props.contact.image} alt="" height="238" />
                 </div>
                 <div key="2">
                     <span>Net ID: &nbsp;</span>
