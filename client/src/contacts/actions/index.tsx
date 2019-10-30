@@ -1,5 +1,4 @@
 import {
-    ContactActionTypes,
     GET_CONTACTS_REQUEST,
     GET_CONTACTS_SUCCESS,
     GET_CONTACTS_FAILURE,

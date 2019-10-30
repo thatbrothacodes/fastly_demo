@@ -10,55 +10,55 @@ export const GET_CONTACTS_SEARCH_REQUEST = "GET_CONTACTS_SEARCH_REQUEST";
 export const GET_CONTACTS_SEARCH_SUCCESS = "GET_CONTACTS_SEARCH_SUCCESS";
 export const GET_CONTACTS_SEARCH_FAILURE = "GET_CONTACTS_SEARCH_FAILURE";
 
-interface GetContactsRequestAction {
+interface IGetContactsRequestAction {
     type: typeof GET_CONTACTS_REQUEST,
     page: number
 }
 
-interface GetContactsSuccessAction {
+interface IGetContactsSuccessAction {
     type: typeof GET_CONTACTS_SUCCESS,
     payload: any
 }
 
-interface GetContactsFailureAction {
+interface IGetContactsFailureAction {
     type: typeof GET_CONTACTS_FAILURE
 }
 
-interface GetContactRequestAction {
+interface IGetContactRequestAction {
     type: typeof GET_CONTACT_REQUEST,
     id: number
 }
 
-interface GetContactSuccessAction {
+interface IGetContactSuccessAction {
     type: typeof GET_CONTACT_SUCCESS,
     payload: any
 }
 
-interface GetContactFailureAction {
+interface IGetContactFailureAction {
     type: typeof GET_CONTACT_FAILURE
 }
 
-interface GetContactsSearchRequestAction {
+interface IGetContactsSearchRequestAction {
     type: typeof GET_CONTACTS_SEARCH_REQUEST,
     name: string,
     page: number
 }
 
-interface GetContactsSearchSuccessAction {
+interface IGetContactsSearchSuccessAction {
     type: typeof GET_CONTACTS_SEARCH_SUCCESS,
     payload: any
 }
 
-interface GetContactsSearchFailureAction {
+interface IGetContactsSearchFailureAction {
     type: typeof GET_CONTACTS_SEARCH_FAILURE
 }
 
-export type ContactActionTypes = GetContactsRequestAction |
-    GetContactsSuccessAction |
-    GetContactsFailureAction |
-    GetContactRequestAction |
-    GetContactSuccessAction |
-    GetContactFailureAction |
-    GetContactsSearchRequestAction |
-    GetContactsSearchSuccessAction |
-    GetContactsSearchFailureAction;
+export type ContactActionTypes = IGetContactsRequestAction |
+    IGetContactsSuccessAction |
+    IGetContactsFailureAction |
+    IGetContactRequestAction |
+    IGetContactSuccessAction |
+    IGetContactFailureAction |
+    IGetContactsSearchRequestAction |
+    IGetContactsSearchSuccessAction |
+    IGetContactsSearchFailureAction;
