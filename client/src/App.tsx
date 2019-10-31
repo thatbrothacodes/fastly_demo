@@ -99,6 +99,7 @@ class App extends React.Component<IComponentPropTypes, any> {
   onClearTextHandler = (event: React.MouseEvent<HTMLInputElement>) => {
     this.props.getContacts();
     this.setState({ page: 1, search: "" });
+    this.props.history.push('/');
   }
 
   render() {
