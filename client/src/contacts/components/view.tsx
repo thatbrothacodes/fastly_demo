@@ -15,7 +15,7 @@ function ContactView (props: IComponentProps) {
         if(contactId) {
             props.getContact(parseInt(contactId));
         }
-    },[]);
+    },[props.location]);
 
     return (
         props.contact && 
